@@ -1,0 +1,122 @@
+body {
+    margin: 0; padding: 0;
+    font-size: 100%;
+    background-color: #212121; 
+    min-height: 80vh; width: 100vw;
+    overflow-x: hidden;
+    background-image: url('../img/auth-bg.avif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position : relative; z-index: 1;
+	width : 100%; height : 100%;
+	object-fit : cover;
+	object-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.authContainer {
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+   
+.authContainer form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.authIcon {
+    color : var(--main-text-color);
+    font-size:10em;
+}
+
+.authContainer form h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--main-text-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputContainer input {
+    width: 87%;
+    height: 1.5em;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 2em;
+    padding-left: 20px;
+
+}
+
+.forgotPassword {
+    color: var(--main-text-color);
+    display: block;
+    justify-content: left;
+    text-align: left;
+    width: 18em;
+}
+
+.forgotPassword a {
+    color : var(--main-contrast-color);
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.forgotPassword a:visited {
+    color : var(--main-contrast-color);
+    text-decoration: none;
+}
+
+/* Button */
+
+.buttonAuth {
+        text-decoration: none;
+        border: 1px solid  var(--main-contrast-color);
+        position: relative;
+        overflow: hidden;
+        font-size: 2em;
+        padding: 0.3rem 0.8rem;
+        color: var(--main-contrast-color);
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 20px;
+        background: transparent;
+        width: 10em;
+        margin: 10px;
+        font-weight: bold;
+}
+      
+.buttonAuth:hover {
+    box-shadow: 1px 1px 15px 5px var(--main-contrast-color);
+}
+      
+.buttonAuth:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,transparent, rgba(146, 148, 248, 0.4), transparent);
+    transition: all 650ms;
+}
+      
+.buttonAuth:hover:before {
+    left: 100%;
+}
