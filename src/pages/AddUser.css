@@ -35,7 +35,7 @@
   margin-left: 8em;
 }
 
-p {
+.form-section p {
   color: var(--main-text-color);
   margin: 10px;
 }

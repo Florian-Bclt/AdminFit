@@ -4,7 +4,7 @@ import Toggle from './Toggle';
 import { confirmAlert } from 'react-confirm-alert';
 import { Link } from 'react-router-dom';
 
-function CardMain({ imgSrc, title, hearts }) {
+function CardMain({ imgSrc, name, hearts, city, Speciality}) {
 
   const [toggled, setToggled] = useState(false);
 
@@ -12,7 +12,7 @@ function CardMain({ imgSrc, title, hearts }) {
     <div className="card_main">
       <img src={imgSrc} alt="" className="card_main_img" />
       <div className="card_main_name">
-        <h2>{title}</h2>
+        <h2>{name}</h2>
         <div className="card_main_icon">
           <i>
             <BsFillHeartFill /> <span>{hearts}</span>
@@ -23,12 +23,12 @@ function CardMain({ imgSrc, title, hearts }) {
       <div className="stat">
         <div>
           <p>
-            Structure<span>Rouen</span>
+            Structure<span>{city}</span>
           </p>
         </div>
         <div>
           <p>
-            Spécialité<span>Crossfit</span>
+            Spécialité<span>{Speciality}</span>
           </p>
         </div>
       </div>

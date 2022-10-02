@@ -15,6 +15,19 @@ import { FaUserPlus} from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 function MainContainer() {
+
+  // state = {
+  //   partners: [
+  //     {id: 1, imgSrc: {seller2}, name: "Mathis Mallet", hearts: "65"},
+  //     {id: 2, imgSrc: {seller1}, name:"Océane Robineau", hearts:"72"},
+  //     {id: 3, imgSrc: {seller3}, name: "Bastien Morel", hearts:"62"},
+  //     {id: 4, imgSrc: {seller4}, name: "Sara Tremblay", hearts:"58"},
+  //     {id: 5, imgSrc: {seller5}, name: "Ninon Michaux", hearts:"10"},
+  //     {id: 6, imgSrc: {seller6}, name: "Sabine Choquet", hearts:"15"}
+  //   ]
+  // }
+
+  
   return (
     <div className="maincontainer">
       <div className="left">
@@ -71,22 +84,22 @@ function MainContainer() {
           </div>
 
           <main>
-                <CardMain imgSrc={seller2} title={"Mathis Mallet"} hearts={"65"} />
-                <CardMain imgSrc={seller1} title={"Océane Robineau"} hearts={"72"} />
-                <CardMain imgSrc={seller3} title={"Bastien Morel"} hearts={"62"} />
-                <CardMain imgSrc={seller4} title={"Sara Tremblay"} hearts={"58"} />
-                <CardMain imgSrc={seller5} title={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} title={"Sabine Choquet"} hearts={"15"} />
-                <CardMain imgSrc={seller5} title={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} title={"Sabine Choquet"} hearts={"15"} />
-                <CardMain imgSrc={seller2} title={"Mathis Mallet"} hearts={"65"} />
-                <CardMain imgSrc={seller1} title={"Océane Robineau"} hearts={"72"} />
-                <CardMain imgSrc={seller3} title={"Bastien Morel"} hearts={"62"} />
-                <CardMain imgSrc={seller4} title={"Sara Tremblay"} hearts={"58"} />
-                <CardMain imgSrc={seller5} title={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} title={"Sabine Choquet"} hearts={"15"} />
-                <CardMain imgSrc={seller5} title={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} title={"Sabine Choquet"} hearts={"15"} />
+                <CardMain imgSrc={seller2} name={"Mathis Mallet"} hearts={"65"} />
+                <CardMain imgSrc={seller1} name={"Océane Robineau"} hearts={"72"} />
+                <CardMain imgSrc={seller3} name={"Bastien Morel"} hearts={"62"} />
+                <CardMain imgSrc={seller4} name={"Sara Tremblay"} hearts={"58"} />
+                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
+                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
+                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
+                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
+                <CardMain imgSrc={seller2} name={"Mathis Mallet"} hearts={"65"} />
+                <CardMain imgSrc={seller1} name={"Océane Robineau"} hearts={"72"} />
+                <CardMain imgSrc={seller3} name={"Bastien Morel"} hearts={"62"} />
+                <CardMain imgSrc={seller4} name={"Sara Tremblay"} hearts={"58"} />
+                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
+                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
+                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
+                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
           </main>
         </div>
       </div>

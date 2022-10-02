@@ -16,7 +16,7 @@ h4 {
 }
 .profileSection img {
 
-  width: 50%;
+  width: 30%;
   height: 300px;
   border-radius: 300px;
   object-fit: cover;
@@ -48,6 +48,7 @@ h4 {
 .profileSection .social-attribut .button2 {
   margin-top: 3em;
   margin-bottom: 2em;
+  padding-bottom: 0.7rem;
   width: 10em;
   color: var(--second-text-color);
   font-weight: bold;
