@@ -18,7 +18,7 @@ h4 {
 
   width: 30%;
   height: 300px;
-  border-radius: 300px;
+  border-radius: 50%;
   object-fit: cover;
   object-position: center;
   box-shadow: 0 0 10px var(--main-contrast-color);
@@ -111,3 +111,35 @@ h4 {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 525px) {
+  .profileSection {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  
+  .informations {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .informations .data_profile {
+    padding-left: 2em;
+  }
+
+  .privilege {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    height: auto;
+    width: auto;
+  }
+  .privilege_attributs {
+    margin-top: 4em;
+  }
+}

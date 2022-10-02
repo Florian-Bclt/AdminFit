@@ -350,11 +350,14 @@
     height: auto;
   }
   .maincontainer .left {
-    width: 100%;
+    width: auto;
+  }
+  .maincontainer .left .banner {
+    display: none;
   }
 
   .maincontainer .left .banner .textContainer h1 {
-    font-size: 2.5em;
+    font-size: 1em;
   }
 
   .maincontainer .left .cards main .card_main {

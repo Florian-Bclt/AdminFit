@@ -4,6 +4,12 @@
   width: calc(100% - 100px);
   padding: 20px;
   padding-top: 30px;
+  overflow-y: scroll;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 
