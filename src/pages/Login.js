@@ -1,31 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaUsers } from 'react-icons/fa'
 import './Login.css'
 
  
-const Login = () => {
+const Login = ({ loginUser }) => {
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+
+  const onLogin = event => {
+    event.preventDefault();
+    loginUser(login, password)
+  };
+  
   return (
     <div className='authContainer'>
-      <form>
+      <form onSubmit={onLogin}>
           <FaUsers className='authIcon'/>
           <h1>Connexion</h1>
           <div className='inputContainer'>
               <input  
                 type='text'
-                name='username'
                 className='form-control'
-                id='email' 
+                value={login} 
                 placeholder="Adresse mail"
                 autoComplete="off"
+                onChange={event => setLogin(event.currentTarget.value)}
                 required
               /> 
 
               <input
                 type="password"
-                name='password'
                 className='form-control'
-                id='password'
-                placeholder='Mot de passe'                   
+                placeholder='Mot de passe' 
+                value={password}
+                onChange={event => setPassword(event.currentTarget.value)}                  
                 required
               />
 

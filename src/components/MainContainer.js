@@ -2,32 +2,36 @@ import React from "react";
 import "./MainContainer.css";
 import Banner from "../img/banner.jpg";
 import CardMain from "./CardMain";
-import seller1 from "../img/seller1.jpg";
-import seller2 from "../img/seller2.jpg";
-import seller3 from "../img/seller3.jpg";
-import seller4 from "../img/seller4.jpg";
-import seller5 from "../img/seller5.jpg";
-import seller6 from "../img/seller6.jpg";
 import MainRightTopCard from "./MainRightTopCard";
 import MainRightBottomCard from "./MainRightBottomCard";
 import { BiSearchAlt } from "react-icons/bi";
 import { FaUserPlus} from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import IMG1 from '../img/seller1.jpg';
+import IMG2 from '../img/seller2.jpg';
+import IMG3 from '../img/seller3.jpg';
+import IMG4 from '../img/seller4.jpg';
+import IMG5 from '../img/seller5.jpg';
+import IMG6 from '../img/seller6.jpg';
 
 function MainContainer() {
 
-  // state = {
-  //   partners: [
-  //     {id: 1, imgSrc: {seller2}, name: "Mathis Mallet", hearts: "65"},
-  //     {id: 2, imgSrc: {seller1}, name:"Océane Robineau", hearts:"72"},
-  //     {id: 3, imgSrc: {seller3}, name: "Bastien Morel", hearts:"62"},
-  //     {id: 4, imgSrc: {seller4}, name: "Sara Tremblay", hearts:"58"},
-  //     {id: 5, imgSrc: {seller5}, name: "Ninon Michaux", hearts:"10"},
-  //     {id: 6, imgSrc: {seller6}, name: "Sabine Choquet", hearts:"15"}
-  //   ]
-  // }
+  const data = [
+    {id: 1, image: IMG2, username: "Mathis Mallet", hearts: 65, city:'Rouen', speciality:'Crossfit'},
+    {id: 2, image: IMG1, username:"Océane Robineau", hearts:72, city:'Amiens', speciality:'RPM'},
+    {id: 3, image: IMG3, username: "Bastien Morel", hearts:62, city:'Paris', speciality:'Crossfit'},
+    {id: 4, image: IMG4, username: "Sara Tremblay", hearts:58, city:'Rouen', speciality:'Aquabyke'},
+    {id: 5, image: IMG5, username: "Ninon Michaux", hearts:10, city:'Lyon', speciality:'Crossfit'},
+    {id: 6, image: IMG6, username: "Sabine Choquet", hearts:15, city:'Rouen', speciality:'Boxes'},
+    {id: 7, image: IMG2, username: "Mathis Mallet", hearts: 65, city:'Strasbourg', speciality:'Step'},
+    {id: 8, image: IMG1, username:"Océane Robineau", hearts:72, city:'Rouen', speciality:'Gym'},
+    {id: 9, image: IMG3, username: "Bastien Morel", hearts:62, city:'Eu', speciality:'Crossfit'},
+    {id: 10,image: IMG4, username: "Sara Tremblay", hearts:58, city:'Bordeaux', speciality:'Renforcement'},
+    {id: 11,image: IMG5, username: "Ninon Michaux", hearts:10, city:'Marseille', speciality:'Crossfit'},
+    {id: 12,image: IMG6, username: "Sabine Choquet", hearts:15, city:'Rouen', speciality:'RPM'},
+  ]
 
-  
+
   return (
     <div className="maincontainer">
       <div className="left">
@@ -84,22 +88,15 @@ function MainContainer() {
           </div>
 
           <main>
-                <CardMain imgSrc={seller2} name={"Mathis Mallet"} hearts={"65"} />
-                <CardMain imgSrc={seller1} name={"Océane Robineau"} hearts={"72"} />
-                <CardMain imgSrc={seller3} name={"Bastien Morel"} hearts={"62"} />
-                <CardMain imgSrc={seller4} name={"Sara Tremblay"} hearts={"58"} />
-                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
-                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
-                <CardMain imgSrc={seller2} name={"Mathis Mallet"} hearts={"65"} />
-                <CardMain imgSrc={seller1} name={"Océane Robineau"} hearts={"72"} />
-                <CardMain imgSrc={seller3} name={"Bastien Morel"} hearts={"62"} />
-                <CardMain imgSrc={seller4} name={"Sara Tremblay"} hearts={"58"} />
-                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
-                <CardMain imgSrc={seller5} name={"Ninon Michaux"} hearts={"10"} />
-                <CardMain imgSrc={seller6} name={"Sabine Choquet"} hearts={"15"} />
+            {data.map(({id, image, username, hearts, city, speciality}) => 
+                <CardMain 
+                  image={image} 
+                  username={username} 
+                  hearts={hearts} 
+                  city={city}
+                  speciality={speciality}
+                />
+            )}
           </main>
         </div>
       </div>

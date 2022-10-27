@@ -10,7 +10,7 @@ function AddUser() {
   myHeaders.append("Content-Type", "application/json");
   
   const raw = JSON.stringify({
-    "login": "variable de login this.user",
+    "email": "variable de login this.user",
     "password": "this.pwd"
   });
   
