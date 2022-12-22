@@ -14,7 +14,7 @@ function Menu() {
       <img src={Logo} alt=''/>
 
         <ul id='mainMenu'>
-            <Link to='/home' className='link'><i className='icon'><FaDelicious /></i></Link>
+            <Link to='/' className='link'><i className='icon'><FaDelicious /></i></Link>
             <Link to='/structure' className='link'><i className='icon'><FaWarehouse /></i></Link>
             <Link to='/profile' className='link'><i className='icon'><FaUser /></i></Link>
             <Link to='/login' className='link'><i className='icon'><FaSignOutAlt /></i></Link>
